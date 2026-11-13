@@ -1,0 +1,166 @@
+/* Global Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+h3 {
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
+  margin: 20px 0 10px 0;
+  color: #444;
+  font-size: 16px;
+}
+
+/* Balance Box */
+.balance-box {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.balance-box h4 {
+  font-size: 14px;
+  color: #777;
+  text-transform: uppercase;
+}
+
+.balance-box h1 {
+  font-size: 28px;
+  color: #222;
+  margin-top: 5px;
+}
+
+/* Income & Expense Summary Container */
+.inc-exp-container {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.inc-exp-container div {
+  flex: 1;
+  text-align: center;
+}
+
+.inc-exp-container div:first-of-type {
+  border-right: 1px solid #e0e0e0;
+}
+
+.inc-exp-container h4 {
+  font-size: 13px;
+  color: #666;
+  text-transform: uppercase;
+}
+
+.money {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.money.plus {
+  color: #2ecc71; /* Green for Income */
+}
+
+.money.minus {
+  color: #c0392b; /* Red for Expense */
+}
+
+/* Transaction List Styling */
+.list {
+  list-style-type: none;
+  max-height: 150px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.list li {
+  background: #fff;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border-right: 5px solid #2ecc71;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.list li.minus {
+  border-right-color: #c0392b; /* Expense item side border red */
+}
+
+/* Form Styling */
+.form-control {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 13px;
+  color: #555;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border-color: #3498db;
+}
+
+.btn {
+  background: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  font-size: 15px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #2980b9;
+}
